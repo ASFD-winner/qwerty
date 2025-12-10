@@ -15,4 +15,4 @@
 # Делаем 13 и 14 и 15 пункты еще комментарии и commit
 ![Шаг 8: commit без add](grob8.png)
 # Делаем 16 и 17 пункты еще коммитим и пушим
-![Шаг 9: commit и push](grob8.png)
+![Шаг 9: commit и push](grob9.png)
