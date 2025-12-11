@@ -23,3 +23,5 @@
 ![](image.png)
 # Делаем 6 и 7 пункт создавая file1.txt и commit
 ![Шаг 12: file1.txt](grob12.png)
+# Делаем 8 и 9 пункт используя git log --oneline --graph и переходим обратно в master ветку
+ ![Шаг 13: git log and master](grob13.png)
