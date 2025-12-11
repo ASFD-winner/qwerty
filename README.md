@@ -16,7 +16,6 @@
 ![Шаг 8: commit без add](grob8.png)
 # Делаем 16 и 17 пункты еще коммитим и пушим
 ![Шаг 9: commit и push](grob9.png)
-png)
 # Делаем первые три пункта и 5 пункт второй части
 ![Шаг 10: branch and mybranch](grob10.png)
 # Делаем 4 пункт сравнение git status
