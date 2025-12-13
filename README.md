@@ -38,41 +38,41 @@
 # ///////Начало заданий на 4\\\\\\\
 
 # Делаем первые три пункта переходя на ветку меняя файл и прописывая git diff
-![Шаг 1: git diff and switch](4grob.png)
+![Шаг 1: git diff and switch](4/4grob.png)
 # Делаем 4 пункт git diff --staged
-![Шаг 2: git diff --staged](4grob1.png)
+![Шаг 2: git diff --staged](4/4grob1.png)
 # Делаем 5 и 6 и 7 пункты git diff и add
-![Шаг 3: git diff and add](4grob2.png)
+![Шаг 3: git diff and add](4/4grob2.png)
 # Делаем 8 и 9 и 10 пункты git diff и удаление числа
-![Шаг 4: git diff and delete](4grob3.png)
+![Шаг 4: git diff and delete](4/4grob3.png)
 # Обьяснение 11 пункта: У нас не показали изменения в staged потому что мы не написали git add переведя их в staged
 # Делаем 12 пункт git status
-![Шаг 5: git status](4grob4.png)
+![Шаг 5: git status](4/4grob4.png)
 # Делаем 13 и 14 пункты git status и git restore --staged
-![Шаг 6: git status and git restore --staged ](4grob5.png)
+![Шаг 6: git status and git restore --staged ](4/4grob5.png)
 # Делаем 15 и 16 пункты add, commit и журнал
-![Шаг 7: git log and add and commit](4grob6.png)
+![Шаг 7: git log and add and commit](4/4grob6.png)
 # Делаем 17 и 18 пункты printf и cat
-![Шаг 8: printf and cat](4grob7.png)
+![Шаг 8: printf and cat](4/4grob7.png)
 # Делаем 19 и 20 и 21 пункты git status, git restore и cat
-![Шаг 9: git status and git restore and cat](4grob8.png)
+![Шаг 9: git status and git restore and cat](4/4grob8.png)
 # Делаем 22 пункт git status
-![Шаг 10: git status](4grob9.png)
+![Шаг 10: git status](4/4grob9.png)
 # Вторая часть
 
 # Делаем 1 пункт создавая файл greeting.txt и add, commit
-![Шаг 11: greeting and add and commit](4grob10.png)
+![Шаг 11: greeting and add and commit](4/4grob10.png)
 # Делаем 2 и 3 и 4 пункты добавляя в файл greeting.txt и add, commit и создаем и переключаемся на ветку feature/uppercase
-![Шаг 12: greeting and add and commit and feature/uppercase ](4grob11.png)
+![Шаг 12: greeting and add and commit and feature/uppercase ](4/4grob11.png)
 # Делаем 5, 6 и 7 пункты git status редактирование greeting.txt и add c  commit
-![Шаг 13: git status and HELLO and add and commit](4grob12.png)
+![Шаг 13: git status and HELLO and add and commit](4/4grob12.png)
 # Делаем 8 пункт git branch
-![Шаг 14: git branch](4grob13.png)
+![Шаг 14: git branch](4/4grob13.png)
 # Делаем 9 пункт git log --oneline --graph –all
-![Шаг 15: git log](4grob14.png)
+![Шаг 15: git log](4/4grob14.png)
 # Делаем 10 и 11 и 12 пункты переключаемся на главную ветку и сравниваем
-![Шаг 16: switch and git diff](4grob15.png)
+![Шаг 16: switch and git diff](4/4grob15.png)
 # Делаем 13 и 14 пункты git merge и cat
-![Шаг 17: git merge and cat ](4grob16.png)
+![Шаг 17: git merge and cat ](4/4grob16.png)
 # Делаем 15 и 16 и 17 пункты git merge и git log --oneline --graph –all и удаляем ветку
-![Шаг 18: git merge and delete and git log ](4grob17.png)
+![Шаг 18: git merge and delete and git log ](4/4grob17.png)
