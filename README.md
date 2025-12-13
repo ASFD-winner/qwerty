@@ -34,4 +34,27 @@
 # Делаем 13 и 14 пункт переходим на ветку mybranch и проверяем исчезновение file2
 ![Шаг 16: switch and ls -la](3/grob17.png)
 # Делаем 15 пункт используя git diff mybranch master
-![Шаг 17: git diff mybranch master,](3/grob18.png)
+![Шаг 17: git diff mybranch master](3/grob18.png)
+# ///////Начало заданий на 4\\\\\\\
+
+# Делаем первые три пункта переходя на ветку меняя файл и прописывая git diff
+![Шаг 1: git diff and switch](4grob.png)
+# Делаем 4 пункт git diff --staged
+![Шаг 2: git diff --staged](4grob1.png)
+# Делаем 5 и 6 и 7 пункты git diff и add
+![Шаг 3: git diff and add](4grob2.png)
+# Делаем 8 и 9 и 10 пункты git diff и удаление числа
+![Шаг 4: git diff and delete](4grob3.png)
+# Обьяснение 11 пункта: У нас не показали изменения в staged потому что мы не написали git add переведя их в staged
+# Делаем 12 пункт git status
+![Шаг 5: git status](4grob4.png)
+# Делаем 13 и 14 пункты git status и git restore --staged
+![Шаг 6: git status and git restore --staged ](4grob5.png)
+# Делаем 15 и 16 пункты add, commit и журнал
+![Шаг 7: git log and add and commit](4grob6.png)
+# Делаем 17 и 18 пункты printf и cat
+![Шаг 8: printf and cat](4grob7.png)
+# Делаем 19 и 20 и 21 пункты git status, git restore и cat
+![Шаг 9: git status and git restore and cat](4grob8.png)
+# Делаем 22 пункт git status
+![Шаг 10: git status](4grob9.png)
