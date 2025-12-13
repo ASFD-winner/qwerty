@@ -58,3 +58,21 @@
 ![Шаг 9: git status and git restore and cat](4grob8.png)
 # Делаем 22 пункт git status
 ![Шаг 10: git status](4grob9.png)
+# Вторая часть
+
+# Делаем 1 пункт создавая файл greeting.txt и add, commit
+![Шаг 11: greeting and add and commit](4grob10.png)
+# Делаем 2 и 3 и 4 пункты добавляя в файл greeting.txt и add, commit и создаем и переключаемся на ветку feature/uppercase
+![Шаг 12: greeting and add and commit and feature/uppercase ](4grob11.png)
+# Делаем 5, 6 и 7 пункты git status редактирование greeting.txt и add c  commit
+![Шаг 13: git status and HELLO and add and commit](4grob12.png)
+# Делаем 8 пункт git branch
+![Шаг 14: git branch](4grob13.png)
+# Делаем 9 пункт git log --oneline --graph –all
+![Шаг 15: git log](4grob14.png)
+# Делаем 10 и 11 и 12 пункты переключаемся на главную ветку и сравниваем
+![Шаг 16: switch and git diff](4grob15.png)
+# Делаем 13 и 14 пункты git merge и cat
+![Шаг 17: git merge and cat ](4grob16.png)
+# Делаем 15 и 16 и 17 пункты git merge и git log --oneline --graph –all и удаляем ветку
+![Шаг 18: git merge and delete and git log ](4grob17.png)
