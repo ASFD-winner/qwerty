@@ -24,4 +24,14 @@
 # Делаем 6 и 7 пункт создавая file1.txt и commit
 ![Шаг 12: file1.txt](grob12.png)
 # Делаем 8 и 9 пункт используя git log --oneline --graph и переходим обратно в master ветку
- ![Шаг 13: git log and master](grob13.png)
+![Шаг 13: git log in mybranch](grob14.png)
+# Делаем 10 пункт используя git log --oneline  и смотрим разницу на разных ветках
+![Шаг 14: git log in main](grob15.png)
+# Разница в том, что коммит из ветки mybranch не будет виден на ветки main
+
+# Делаем 11 и 12 пункт создавая file2 коммитим его и используем gitlog
+![Шаг 15: file2 and gitlog](grob16.png)
+# Делаем 13 и 14 пункт переходим на ветку mybranch и проверяем исчезновение file2
+![Шаг 16: switch and ls -la](grob17.png)
+# Делаем 15 пункт используя git diff mybranch master
+![Шаг 17: git diff mybranch master,](grob18.png)
