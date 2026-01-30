@@ -1,46 +1,39 @@
 #include <stdio.h>
-#include <stdlib.h> 
+#include <math.h>
 
-struct Line {
-    double *a;  
-    double *b;
-    int size;  
+struct Vector{
+    int x;
+    int y;
+    int z;
 };
 
-void dann(struct Line *lines) {  // Указатель!
-    for(int i = 0; i < lines->size; i++) {
-        printf("Прямая %d: введите a и b: ", i+1);
-        scanf("%lf %lf", &lines->a[i], &lines->b[i]);  // стрелка ->
+void CreateVector(struct Vector mass[], int M){
+    for (int i = 0; i < M; i++){
+        printf("Вектор %d, введите - x, y, z: ", i+1);
+        scanf("%d %d %d", &mass[i].x, &mass[i].y, &mass[i].z);
     }
 }
 
-int parall(struct Line *lines) {
-    int k1=0;
-    for(int i = 0; i < lines->size; i++) {
-        if (lines->a[i]==0){
-            k1+=1;
+double Length(struct Vector v){
+    return sqrt(v.x * v.x + v.y * v.y + v.z * v.z); 
+}
+
+int main(){
+    int M;
+    printf("Введите кол-во векторов: \n");
+    scanf ("%d", &M);
+    struct Vector mass[M];
+    CreateVector (mass, M);
+    int nomerlongs = 0;
+    double makslength = Length(mass[0]);
+    for (int i = 1; i < M; i++){
+        double realverylong = Length(mass[i]);
+        if (realverylong > makslength){
+            makslength = realverylong;
+            nomerlongs = i;
         }
-    }
-    return k1;
-}
 
-int main() {
-    struct Line lines;
-    int k2=0;
-    
-    printf("Сколько прямых? ");
-    scanf("%d", &lines.size);
-    
-    lines.a = (double*)malloc(lines.size * sizeof(double));
-    lines.b = (double*)malloc(lines.size * sizeof(double));
-    
-    dann(&lines);  // Передаем АДРЕС!
-    int k1=parall(&lines);
-    printf("k1=%d\n", k1);
-    printf("k2=%d\n", k2);
-    
-    free(lines.a);
-    free(lines.b);
-    
-    return 0;
+    }
+    printf("Самый длинный вектор - %d\n", nomerlongs + 1);
+    printf("Длина: %.1f\n", makslength);
 }
