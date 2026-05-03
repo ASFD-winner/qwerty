@@ -1,0 +1,3 @@
+[submodule "qwerty"]
+	path = qwerty
+	url = https://github.com/ASFD-winner/qwerty.git
