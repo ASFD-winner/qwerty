@@ -85,10 +85,12 @@ int main() {
                     // Изменение размера кисти (оценка 4)
                     case sf::Keyboard::Add:
                     case sf::Keyboard::Equal:
+                        brushRadius=std::min(20, brushRadius+1);
                         // TODO: увеличить brushRadius на 1, но не более 20
                         break;
                     case sf::Keyboard::Hyphen:
                     case sf::Keyboard::Subtract:
+                        brushRadius=std::max(20, brushRadius-1);
                         // TODO: уменьшить brushRadius на 1, но не менее 1
                         break;
 
@@ -104,6 +106,11 @@ int main() {
                     case sf::Keyboard::Num8:
                     case sf::Keyboard::Num9: {
                         int idx = event.key.code - sf::Keyboard::Num0;
+                        if (idx<(int)palette.size()){
+                            selectedPaletteIndex=idx;
+                            currentColor=palette[idx];
+
+                        }
                         // TODO: если idx в пределах palette, установить selectedPaletteIndex и currentColor
                         break;
                     }
@@ -158,6 +165,14 @@ int main() {
                 sf::Vector2i mouse = sf::Mouse::getPosition(window);
                 int paletteY = HEIGHT * PIXEL_SIZE + 50;
                 if (mouse.y >= paletteY && mouse.y <= paletteY + 30) {
+                    for (int i=0; i<(int)palette.size(); i++){
+                        int boxX= 10+i*35;
+                        if (mouse.x >= boxX && mouse.x <= boxX + 30){
+                            selectedPaletteIndex = i;
+                            currentColor = palette[i];
+                        }
+
+                    }
                     // TODO: пройти по palette, определить по mouse.x какой выбран прямоугольник
                     // обновить selectedPaletteIndex и currentColor
                 }
