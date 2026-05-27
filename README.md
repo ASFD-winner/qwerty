@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fgifsec.com%2Fdark-anime-gifs%2F&ved=0CBUQjRxqFwoTCMD1muns2ZQDFQAAAAAdAAAAABBF&opi=89978449" alt="Demo" width="80%">
+  <img src="https://gifsec.com/wp-content/uploads/2022/11/dark-anime-gif-1.gif" alt="Demo" width="80%">
 </div>
 
 # 📚 qwerty
