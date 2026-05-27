@@ -73,12 +73,15 @@ int main() {
 
                     // Фильтры (оценка 5)
                     case sf::Keyboard::G:
+                        applyGrayscale(canvas);
                         // TODO:
                         break;
                     case sf::Keyboard::N:
+                        applyNegative(canvas);
                         // TODO:
                         break;
                     case sf::Keyboard::M:
+                        applyBlur(canvas);
                         // TODO:
                         break;
 
@@ -90,7 +93,7 @@ int main() {
                         break;
                     case sf::Keyboard::Hyphen:
                     case sf::Keyboard::Subtract:
-                        brushRadius=std::max(20, brushRadius-1);
+                        brushRadius=std::max(1, brushRadius-1);
                         // TODO: уменьшить brushRadius на 1, но не менее 1
                         break;
 

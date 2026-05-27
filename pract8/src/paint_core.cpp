@@ -99,6 +99,14 @@ void undo(Canvas& canvas) {
 // ========== 7. Оттенки серого (оценка 5) ==========
 void applyGrayscale(Canvas& canvas) {
     saveToUndo(canvas);
+    for(int y=0; y<HEIGHT; y++) {
+        for(int x=0; x<WIDTH; x++){
+            sf::Color c =canvas[y][x];
+            int gray = (c.r + c.g + c.b) / 3;
+            canvas[y][x] = sf::Color(gray, gray, gray);
+
+        }
+    }
     // TODO: применить к каждой строке
     // int gray = (c.r + c.g + c.b) / 3; return sf::Color(gray, gray, gray);
 
@@ -107,12 +115,35 @@ void applyGrayscale(Canvas& canvas) {
 // ========== 8. Негатив (оценка 5) ==========
 void applyNegative(Canvas& canvas) {
     saveToUndo(canvas);
+    for(int y=0; y<HEIGHT; y++) {
+        for(int x=0; x<WIDTH; x++){
+            sf::Color c =canvas[y][x];
+            canvas[y][x] = sf::Color(255 - c.r, 255 - c.g, 255 - c.b);
+        }
+    }
     // TODO: аналогично, но для каждого компонента: 255 - c.r и т.д.
 }
 
 // ========== 9. Размытие (оценка 5) ==========
 void applyBlur(Canvas& canvas) {
     saveToUndo(canvas);
+    Canvas original = canvas;
+    for(int y=1; y<HEIGHT-2; y++) {
+        for(int x=1; x<WIDTH-2; x++){
+            int sumR=0;
+            int sumG=0;
+            int sumB=0;
+            for(int dy=-1; dy<=1; dy++ ){
+                for(int dx=-1;dx<=1; dx++){
+                    sf::Color c=original[y+dy][x+dx];
+                    sumR+=c.r;
+                    sumG+=c.g;
+                    sumB+=c.b;
+                }
+            }
+            canvas[y][x]= sf::Color(sumR/9, sumG/9, sumB/9);
+        }
+    }
     // TODO: создать копию Canvas original = canvas;
     // Для всех y от 1 до HEIGHT-2, x от 1 до WIDTH-2:
     //   просуммировать r,g,b всех 9 соседей из original, поделить на 9
